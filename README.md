@@ -20,3 +20,6 @@ The proposed CI/CD setup for the backend application could consist of only `Code
 Due to the reduction in complexity offered by AWS Lambda, the CI/CD footprint is much smaller. However, in the real world where application are usually more complex than the current one the below figure would summarize how a DevOps pipeline with Security in context should look like.
 
 ![Ideal CI/CD Setup](/DevOps_Internal_Stages.png?raw=true "Ideal CI/CD Setup")
+
+
+**Open in Images in new tab for clarity**
