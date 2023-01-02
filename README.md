@@ -16,3 +16,7 @@ The proposed CI/CD setup for the backend application could consist of only `Code
 4. We should then run unit-tests against the staging api gateway at staging-api.simplifycloud.uk, if the tests fail then we should terminate and fail the build.
 5. If the tests from the previous stage are successful then we should update the "prod" alias to point to the latest version of the lambda. If desired we could also do a `canary` release by updating the weights of the version "prod" alias points to. If `canary` or `linear` increase is desired as deployment method to Lambda then we can make use of AWS CodeDeploy which the AWS Native DevOps tool for Continuous Deployment.
 
+## Ideal CI/CD
+Due to the reduction in complexity offered by AWS Lambda, the CI/CD footprint is much smaller. However, in the real world where application are usually more complex than the current one the below figure would summarize how a DevOps pipeline with Security in context should look like.
+
+![Ideal CI/CD Setup](/DevOps_Internal_Stages.png?raw=true "Ideal CI/CD Setup")
