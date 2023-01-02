@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 *.zip
+=======
+#terraform
+.terraform*
+terraform.tfstate*
+
+#lambda
+lambda_code.zip
+>>>>>>> 95bc4e9 (Seggregated prod and staging API gateways)
